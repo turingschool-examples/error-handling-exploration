@@ -46,5 +46,5 @@ In the client directory, there are some files we can use as a makeshift client.
 
 | url       | verb | options | sample response |
 | ----------|------|---------|---------------- |
-| `http://localhost:3001/api/v1/500-response`  | GET | not needed | '500 Mock Internal Server Error'  |
-| `http://localhost:3001/api/v1/500-response`| POST | `{ id: <Number>, name: <String>, status: <String>, interests: <String> }` | '500 Mock Internal Server Error' |
+| `http://localhost:3001/api/v1/500-response`  | GET | not needed | `{ error: '500 Mock Internal Server Error' }`  |
+| `http://localhost:3001/api/v1/500-response`| POST | `{ id: <Number>, name: <String>, status: <String>, interests: <String> }` | `{ error: '500 Mock Internal Server Error' }` |
