@@ -15,7 +15,7 @@ const form = document.querySelector('.new-person-form');
 
 // GET REQUEST
 const getAllPeople = () => {
-  fetch(testURL500)
+  fetch(peopleURL)
   .then(response => response.json())
   .then(peopleData => renderPeople(peopleData))
   .catch((error) => alert(error));
