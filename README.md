@@ -42,13 +42,6 @@ In the client directory, there are some files we can use as a makeshift client.
 | `http://localhost:3001/api/v1/people`  | GET | not needed | Array of all existing users: `[{ id: 1, name: 'Bill', fun_fact: 'Knows how to juggle' }]` |
 | `http://localhost:3001/api/v1/users`| POST | `{ id: <Number>, name: <String>, status: <String>, interests: <String> }` | New user: `{ id: 55, name: 'Fran', fun_fact: 'Has met a hippo' }` |
 
-### Fake 400 Response Endpoints
-
-| url       | verb | options | sample response |
-| ----------|------|---------|---------------- |
-| `http://localhost:3001/api/v1/400-response`  | GET | not needed | '400 Mock Bad Request' |
-| `http://localhost:3001/api/v1/400-response`| POST | '400 Mock Bad Request'|
-
 ### Fake 500 Response Endpoints
 
 | url       | verb | options | sample response |
