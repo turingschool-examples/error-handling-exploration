@@ -34,11 +34,15 @@ const addPerson = (newPerson) => {
 }
 
 const renderPeople = (people) => {
-  people.forEach((person) => updatePeopleHTML(person));
+  if(Array.isArray(people)) {
+    people.forEach((person) => updatePeopleHTML(person));
+  }
 }
 
 const updatePeopleHTML = (person) => {
-  peopleSection.innerHTML += `<p>${person.name}: ${person.fun_fact}</p>`
+  if (!!person.name) {
+    peopleSection.innerHTML += `<p>${person.name}: ${person.fun_fact}</p>`
+  }
 }
 
 form.addEventListener('submit', (e) => {
